@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <input type="file" name="file" id="file">
+        <input onclick="createGraph()" type="button" value="Upload">
+    </div>
+    <div id="loading" style="display: none;">
+        <img id="loading-image" src="./loader.gif" alt="Loading..." />
+    </div>
+    <div id="chart">
+
+    </div>
+    <script src="https://unpkg.com/lightweight-charts/dist/lightweight-charts.standalone.production.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
